@@ -1,11 +1,5 @@
-html {
-    --gray: #444;
-    --gray-dark: #333;
-    --gray-light: #f2f2f2;
-}
-
 body{
-    background-image: url(../img/marble-background.jpg);
+    background-color: #fcfcfc;
     background-size: 200%;
     font-family: 'Poppins', sans-serif;
 }
@@ -33,21 +27,15 @@ p {
     margin-bottom: 1rem;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: [full-start] minmax(2rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(2rem, 1fr) [full-end];
-}
-
-.grid > * {
-    grid-column: main;
-}
-
 header {
     background-image: url(../img/header2.jpg);
-    background-size: 200%;
+    background-position: left 5%;
+    background-size: 220%;
+    padding: 3rem;
 }
 
 header h2 {
+    margin-bottom: 1rem;
     margin-top: 20rem;
 }
 
@@ -56,7 +44,8 @@ header p {
 }
 
 img {
-    margin-bottom: 3rem;
+    display: flex;
+    max-width: 100%
 }
 
 .fa-bars {
@@ -66,23 +55,31 @@ img {
     margin-top: -2.3rem;
 }
 
-tr.milk td:first-child{
-    padding-left: 20px;
+.menu-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    padding: 2rem;
 }
 
-th.foodprice{
-    font-weight: 300;
+.menu {
+    padding: 1rem;
+}
+
+tr.milk td:first-child{
+    padding-left: 20px;
 }
 
 table {
     color:#4A322F;
     font-size: 20px;
-    margin-bottom: 2rem;
+    table-layout: auto;
     width: 100%;
 }
 
 td {
     font-weight: 300;
+    padding-right: 2rem;
 }
 
 th {
@@ -91,12 +88,17 @@ th {
     text-align: left;
 }
 
-.location {
+.two-column h2 {
     margin-bottom: 3rem;
+}
+
+.location {
+    padding: 3rem;
 }
 
 footer {
     background-color: #dcdcdc;
+    padding: 1rem;
 }
 
 footer h3 {
@@ -111,10 +113,38 @@ footer p {
     margin-bottom: 3rem;
     margin-top: 4rem;
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 768px) {
+    header {
+        background-position: left 5%;
+        background-repeat: no-repeat;
+        background-size: 130%
+    }
+    .menu-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu {
+        padding: 2rem;
+    }
+
     .two-column {
         display: grid;
         grid-gap: 3rem;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        background-position: left 70%;
+        background-size: 100%;
+    }
+    .menu-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu {
+        padding: 2rem;
     }
 }

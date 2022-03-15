@@ -1,0 +1,10 @@
+.tns-controls {
+    padding: 1rem;
+}
+
+.tns-controls button {
+    background: #fff;
+    border: 1px solid black;
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+}
