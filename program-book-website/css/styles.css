@@ -17,7 +17,6 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    padding: 2rem;
 }
 
 h3 {
@@ -26,9 +25,7 @@ h3 {
     font-size: 16px;
     font-style: italic;
     font-weight: 300;
-    margin-left: 1rem;
-    padding: 1rem;
-
+    padding: 2rem 0rem;
 }
 
 p {
@@ -47,14 +44,15 @@ footer {
 }
 
 img {
+    border: .5px solid #adadad;
     margin-bottom: 3rem;
-    padding: 0rem 2rem;
+
 }
 
 a {
     color:#393939;
+    display: block;
     font-family: "Poppins", sans-serif;
-    margin-left: 2rem;
     text-decoration: none;
 }
 
@@ -66,7 +64,7 @@ a:hover {
 .fall h2 {
     color: #BE5827;
     line-height: 1rem;
-    margin-top: 5rem;
+    padding: 0rem 2rem 4rem 2rem;
 }
 
 .fall h2:after {
@@ -83,8 +81,8 @@ a:hover {
 
 .spring h2 {
     color:#2792B9;
-    line-height: 1rem;
-    margin-top: 5rem;
+    line-height: 1;
+    padding: 0rem 2rem 4rem 2rem;
 }
 .spring h2:after {
     background: #2792B9;
@@ -97,16 +95,12 @@ a:hover {
     width: 45%;
 }
 
-.tech-one {
-    margin-bottom: 5rem;
+.description {
+    margin-bottom: 4rem;
 }
 
-.viscom {
-    margin-bottom: 5rem;
-}
-
-.tech-two {
-    margin-bottom: 7rem;
+.tech-one, .tech-two, .viscom {
+    padding: 0rem 2rem 3rem 2rem;
 }
 
 .copic-head h3 {
@@ -115,10 +109,13 @@ a:hover {
 
 .process {
     display: grid;
+    padding: 0rem 2rem;
 }
 
 .final {
     margin-bottom: 3rem;
+    margin-top: 4rem;
+    padding: 0rem 2rem;
 }
 
 @media screen and (min-width: 1000px) {
