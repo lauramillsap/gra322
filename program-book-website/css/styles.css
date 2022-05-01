@@ -109,13 +109,67 @@ a:hover {
 
 .process {
     display: grid;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .final {
     margin-bottom: 3rem;
     margin-top: 4rem;
     padding: 0rem 2rem;
+}
+
+.project-head h2 {
+    padding: 1rem 2rem;
+}
+
+.project-head h3 {
+    padding: 3rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .fall h2:after {
+        background: #BE5827;
+        content: "";
+        display: flex;
+        height: 1px;
+        margin-right: 2rem;
+        position: absolute;
+        right: 0;
+        width: 80%;
+    }
+
+    .spring h2:after {
+        align-content: stretch;
+        background: #2792B9;
+        content: "";
+        display: flex;
+        height: 1px;
+        margin-right: 2rem;
+        position: absolute;
+        right: 0;
+        width: 75%;
+    }
+
+    a img {
+        max-width: 50%;
+    }
+
+    img {
+        max-width: 85%;
+    }
+    
+    .final {
+        max-width: 80%;
+    }
+
+    .process {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .process img {
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -156,6 +210,7 @@ a:hover {
 
     .process {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
     }
 
     .process img {
